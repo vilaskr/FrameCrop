@@ -1,0 +1,6 @@
+{
+  "name": "FrameCrop",
+  "description": "One Upload. Every Platform. Instantly generate, customize, and batch-download optimized social media crops.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

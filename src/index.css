@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;600;700;900&family=JetBrains+Mono:wght@400;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Public Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Public Sans", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #F8F4E8;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+}
+
+/* Subtle dot grid pattern to elevate the Bento design style */
+.bento-grid-bg {
+  background-image: radial-gradient(circle at 2px 2px, rgba(0, 0, 0, 0.08) 1.5px, transparent 0);
+  background-size: 24px 24px;
+}
+
+.dark .bento-grid-bg {
+  background-image: radial-gradient(circle at 2px 2px, rgba(255, 255, 255, 0.05) 1.5px, transparent 0);
+  background-size: 24px 24px;
+}
+
+/* Custom transitions and scrollbar overrides */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F8F4E8;
+  border-left: 3px solid #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #FFD43B;
+  border: 3px solid #000000;
+  border-radius: 4px;
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: #18181A;
+  border-left: 3px solid #000000;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background-color: #74C0FC;
+  border: 3px solid #000000;
+}
